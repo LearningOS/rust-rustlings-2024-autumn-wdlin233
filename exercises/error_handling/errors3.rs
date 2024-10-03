@@ -7,15 +7,14 @@
 // Execute `rustlings hint errors3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 use std::num::ParseIntError;
 
 fn main() {
     let mut tokens = 100;
     let pretend_user_input = "8";
 
-    let cost = total_cost(pretend_user_input)?;
+    let cost = total_cost(pretend_user_input).unwrap();
+    // `.unwrap() 方法主要应用于处理 Result 或 Option 类型。这两种类型常用于处理可能会出现错误或缺失值的情况。
 
     if cost > tokens {
         println!("You can't afford that many!");
