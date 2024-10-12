@@ -71,11 +71,6 @@ impl<T: Ord + Clone> LinkedList<T> {
 	pub fn merge(mut list_a:LinkedList<T>, mut list_b:LinkedList<T>) -> Self
 	{
 		//TODO
-		// Self {
-        //     length: 0,
-        //     start: None,
-        //     end: None,
-        // }
         let mut list_c = LinkedList::<T>::new();
         let mut list_a_index: u32 = 0;
         let mut list_b_index: u32 = 0;
